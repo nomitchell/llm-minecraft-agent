@@ -12,7 +12,7 @@ prompt_template=f'''<s>[INST] {prompt} [/INST]
 '''
 
 sys_prompt = "You are a helpful assistant, who always provide explanation. Think like you are answering to a five year old."
-prompt = "please give me step by step instructions to find a diamond in minecraft"
+prompt = "give me step by step instructions to find a diamond in minecraft"
 
 prefix = "<|im_start|>"
 suffix = "<|im_end|>\n"
