@@ -1,0 +1,11 @@
+2024-03-02 19:34:35 noah-Vivobook-ASUSLaptop-K3605VU-K3605VU watchdog[4256] INFO Watchdog started between parent 4048 and child 4112
+2024-03-02 19:34:42 noah-Vivobook-ASUSLaptop-K3605VU-K3605VU watchdog[4256] INFO Parent is not running, hence we need terminate the child.
+2024-03-02 19:34:42 noah-Vivobook-ASUSLaptop-K3605VU-K3605VU watchdog[4256] INFO About to reap process tree of 4112:launchClient.sh:/usr/bin/bash i sleeping, owner 1217, printing process tree status in termination order:
+2024-03-02 19:34:42 noah-Vivobook-ASUSLaptop-K3605VU-K3605VU watchdog[4256] INFO 	-4180:java:/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java i sleeping, owner 4116
+2024-03-02 19:34:42 noah-Vivobook-ASUSLaptop-K3605VU-K3605VU watchdog[4256] INFO 	-4116:java:/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java i sleeping, owner 4112
+2024-03-02 19:34:42 noah-Vivobook-ASUSLaptop-K3605VU-K3605VU watchdog[4256] INFO 	-4112:launchClient.sh:/usr/bin/bash i sleeping, owner 1217
+2024-03-02 19:34:42 noah-Vivobook-ASUSLaptop-K3605VU-K3605VU watchdog[4256] INFO Trying to SIGTERM 4180:java:/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java i sleeping, owner 4116
+2024-03-02 19:34:43 noah-Vivobook-ASUSLaptop-K3605VU-K3605VU watchdog[4256] INFO Process psutil.Process(pid=4180, name='java', status='terminated', started='19:34:32') terminated with exit code None
+2024-03-02 19:34:43 noah-Vivobook-ASUSLaptop-K3605VU-K3605VU watchdog[4256] INFO Trying to SIGTERM 4116:java:/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java i sleeping, owner 4112
+2024-03-02 19:34:43 noah-Vivobook-ASUSLaptop-K3605VU-K3605VU watchdog[4256] INFO Process psutil.Process(pid=4116, name='java', status='terminated', started='19:34:32') terminated with exit code None
+2024-03-02 19:34:43 noah-Vivobook-ASUSLaptop-K3605VU-K3605VU watchdog[4256] INFO Process psutil.Process(pid=4112, name='launchClient.sh', status='terminated', started='19:34:32') does not exist or is zombie.

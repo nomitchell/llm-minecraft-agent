@@ -1,4 +1,7 @@
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
+import json
+
+'''
 model_name_or_path = "TheBloke/Mistral-7B-Instruct-v0.1-GPTQ"
 # To use a different branch, change revision
 # For example: revision="gptq-4bit-32g-actorder_True"   gptq-4bit-32g-actorder_True
@@ -8,7 +11,7 @@ model = AutoModelForCausalLM.from_pretrained(model_name_or_path,
                                              revision="main")
 tokenizer = AutoTokenizer.from_pretrained(model_name_or_path, use_fast=True)
 prompt = "Tell me about AI"
-prompt_template=f'''<s>[INST] {prompt} [/INST]
+prompt_template=f'''
 '''
 
 sys_prompt = "You are a helpful assistant, who always provide explanation. Think like you are answering to a five year old."
@@ -36,8 +39,9 @@ print(pipe(prompt_template)[0]['generated_text'])
 tok = tokenizer("prompt_template")
 tokens = len(tok['input_ids'])
 print(f"Number of tokens: {tokens}")
+'''
 
-class model:
+class Model:
     def __init__(self):
         self.model_name_or_path = "TheBloke/Mistral-7B-Instruct-v0.1-GPTQ"
         self.model = AutoModelForCausalLM.from_pretrained(
@@ -47,12 +51,12 @@ class model:
             revision="main"
         )
         
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name_or_path, use_fast=True)
+        self.tokenizer = AutoTokenizer.from_pretrained(self.model_name_or_path, use_fast=True)
 
         self.pipe = pipeline(
             "text-generation",
-            model=model,
-            tokenizer=tokenizer,
+            model=self.model,
+            tokenizer=self.tokenizer,
             max_new_tokens=512,
             do_sample=True,
             temperature=0.7,
@@ -64,14 +68,17 @@ class model:
         self.prefix = "<|im_start|>"
         self.suffix = "<|im_end|>\n"
 
-    def formatPrompt(systemText, userText):
-        sys_format = prefix + "system\n" + sys_prompt + suffix
-        user_format = prefix + "user\n" + prompt + suffix
+    def formatPrompt(self, systemText, userText):
+        sys_format = self.prefix + "system\n" + systemText + self.suffix
+        user_format = self.prefix + "user\n" + userText + self.suffix
         prompt_template = sys_format + user_format 
 
-        return prompt
+        return prompt_template
 
-    def decomposeGoal(self, objectName, objectQuantity, objectInfo):
+    def extractChildObjectives(response):
+        pass
+
+    def decomposeGoal(self, task_id, task_steps):
         systemText = \
         '''SYSTEM:
         You are an assistant for the game Minecraft.
@@ -115,13 +122,13 @@ class model:
         }''' 
 
         userText = \
-        f'''Target object: {objectQuantity} {objectName}
-        Information: {objectInfo}
+        f'''Target object: {task_id}
+        Information: {task_steps}
         '''
 
         prompt = self.formatPrompt(systemText, userText)
 
-        response = pipe(prompt)[0]['generated_text']
+        response = self.pipe(prompt)[0]['generated_text']
 
         return response
 

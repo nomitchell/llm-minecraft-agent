@@ -1,0 +1,8 @@
+2024-03-02 15:44:16 noah-Vivobook-ASUSLaptop-K3605VU-K3605VU watchdog[21419] INFO Watchdog started between parent 21165 and child 21266
+2024-03-02 15:45:29 noah-Vivobook-ASUSLaptop-K3605VU-K3605VU watchdog[21419] INFO Parent is not running, hence we need terminate the child.
+2024-03-02 15:45:29 noah-Vivobook-ASUSLaptop-K3605VU-K3605VU watchdog[21419] INFO About to reap process tree of 21266:launchClient.sh:/usr/bin/bash i sleeping, owner 1181, printing process tree status in termination order:
+2024-03-02 15:45:29 noah-Vivobook-ASUSLaptop-K3605VU-K3605VU watchdog[21419] INFO 	-21270:java:/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java i sleeping, owner 21266
+2024-03-02 15:45:29 noah-Vivobook-ASUSLaptop-K3605VU-K3605VU watchdog[21419] INFO 	-21266:launchClient.sh:/usr/bin/bash i sleeping, owner 1181
+2024-03-02 15:45:29 noah-Vivobook-ASUSLaptop-K3605VU-K3605VU watchdog[21419] INFO Trying to SIGTERM 21270:java:/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java i sleeping, owner 21266
+2024-03-02 15:45:30 noah-Vivobook-ASUSLaptop-K3605VU-K3605VU watchdog[21419] INFO Process psutil.Process(pid=21270, name='java', status='terminated', started='15:44:12') terminated with exit code None
+2024-03-02 15:45:30 noah-Vivobook-ASUSLaptop-K3605VU-K3605VU watchdog[21419] INFO Process psutil.Process(pid=21266, name='launchClient.sh', status='terminated', started='15:44:12') does not exist or is zombie.

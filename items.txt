@@ -1,0 +1,123 @@
+Arrow
+Axe
+Bow
+Bucket
+Carrot on a Stick
+Clock
+Compass
+Crossbow
+Exploration Map
+Fire Charge
+Fishing Rod
+Flint and Steel
+Glass Bottle
+Dragon's Breath
+Hoe
+Lead
+Map
+Pickaxe
+Shears
+Shield
+Shovel
+Sword
+Saddle
+Spyglass
+Totem of Undying
+Apple
+Golden Apple
+Notch Apple
+Beetroot
+Beetroot Soup
+Raw Beef
+Steak
+Bread
+Cake
+Carrot
+Golden Carrot
+Raw Chicken
+Cooked Chicken
+Chrous Fruit
+Clownfish
+Cookie
+Egg
+Raw Cod
+Cooked Cod
+Melon Slice
+Milk
+Mushroom
+Mushroom Stew
+Raw Mutton
+Cooked Mutton
+Porkchop
+Cooked Porkchop
+Potato
+Baked Potato
+Poisonous Potato
+Potions
+Pufferfish
+Pumpkin Pie
+Raw Rabbit
+Cooked Rabbit
+Rabbit Stew
+Rotten Flesh
+Salmon
+Cooked Salmon
+Sugar
+Suspicious Stew
+Sweet Berries
+Blaze Powder
+Blaze Rod
+Bone
+Bone Meal
+Book
+Book and Quill
+Enchanted Book
+Bowl
+Brick
+Clay
+Coal
+Charcoal
+Cocoa Beans
+Copper Ingot
+Diamond
+Dyes
+Emerald
+Ender Pearl
+Eye of Ender
+Feather
+Spider Eye
+Fermented Spider Eye
+Flint
+Ghast Tear
+Glistening Melon
+Glowstone Dust
+Gold Ingot
+Gold Nugget
+Gunpowder
+Ink Sac
+Iron Ingot
+Iron Nugget
+Lapis Lazuli
+Leather
+Magma Cream
+Music Disc
+Name Tag
+Nether Bricks
+Paper
+Popped Chorus Fruit
+Prismarine Crystal
+Rabbit's Foot
+Rabbit Hide
+Redstone
+Seeds
+Beetroot Seeds
+Nether Ward Seeds
+Pumpkin Seeds
+Wheat Seeds
+Slimeball
+Snowball
+Spawn Egg
+Stick
+String
+Wheat
+Netherite Ingot

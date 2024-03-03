@@ -1,9 +1,20 @@
 import minedojo
-from Menu import Menu
+from menu import Menu
+from model import Model
 
-task_id = Menu.openMenu(minedojo.tasks.ALL_PROGRAMMATIC_TASK_IDS)
+task_id_options = [i[8:].replace("_", " ") for i in minedojo.tasks.ALL_PROGRAMMATIC_TASK_IDS if "harvest_1" in i or "harvest_8" in i]
 
-env = minedojo.make(task_id=task_id, image_size=(160, 256))
+with open("items.txt", 'r') as f:
+    items = f.readlines()
+    items = [i.replace("\\n", "") for i in items]
+
+task_id = "harvest_" + Menu.openMenu(task_id_options).replace(" ", "_")
+
+model = Model()
+
+print(model.decomposeGoal(task_id.replace("-", " "), minedojo.tasks.ALL_PROGRAMMATIC_TASK_INSTRUCTIONS[task_id]))
+
+env = minedojo.make(task_id="Playthrough", image_size=(160, 256))
 
 #print(mcwiki.retrieveKnowledge("https://minecraft.fandom.com/wiki/Diamond"))
 
@@ -21,11 +32,13 @@ while True:
 '''
 
 
-ask for goal
+ask for goal done
 
-create environment
+create environment done
 
-load knowledge
+load knowledge to do
+
+load model
 
 call decomposer on goal, knowledge, and format, save goal tree
 
